@@ -11,7 +11,7 @@ var getFee = function(amount, messageType, message) {
   }else if(amount > 250000) {
     fee += 25;
   }else {
-    fee += Math.floor(amount / 1000);
+    fee += Math.floor(amount / 10000);
   }
 
   // message fee
